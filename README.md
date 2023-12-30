@@ -35,9 +35,11 @@ class football_players(models. Model):
   matches_played models. IntegerField()
   total_goals=models. IntegerField()
   email=models. EmailField()
+  
 class football_playersAdmin(admin. ModelAdmin):
   list_display=
 ('first_name', 'last_name', 'dob', 'age','matches_played', 'total_goals', 'email')
+
 admin.py
  from django.contrib import admin
 from.models import football_players, football_playersAdmin
